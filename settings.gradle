@@ -1,0 +1,4 @@
+rootProject.name='FamilyMapApp'
+include ':app'
+include ':server'
+include ':shared'

@@ -1,0 +1,30 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':shared')
+
+
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.6'
+
+    // https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.30.1'
+    implementation files('jars\\JUnit5\\apiguardian-api-1.1.0.jar')
+    implementation files('jars\\JUnit5\\junit-jupiter-5.5.2.jar')
+    implementation files('jars\\JUnit5\\junit-jupiter-api-5.5.2.jar')
+    implementation files('jars\\JUnit5\\junit-jupiter-engine-5.5.2.jar')
+    implementation files('jars\\JUnit5\\junit-jupiter-params-5.5.2.jar')
+    implementation files('jars\\JUnit5\\junit-platform-commons-1.5.2.jar')
+    implementation files('jars\\JUnit5\\junit-platform-engine-1.5.2.jar')
+    implementation files('jars\\JUnit5\\opentest4j-1.2.0.jar')
+    implementation files('jars\\gson-2.6.2.jar')
+    implementation files('jars\\sqlite-jdbc-3.7.2.jar')
+    implementation files('jars\\json-20160212.jar')
+    implementation files('jars\\sqlite-jdbc-3.7.2.jar')
+
+
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
